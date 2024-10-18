@@ -1,0 +1,78 @@
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* General */
+h1, h2, h3 {
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    margin: 5rem 0;
+}
+
+h1 {
+    font-size: 4.4rem;
+    color: white;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Imagen */
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+  
+.icon-size {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.background-fondo {
+    background-color: #212529;
+}
+
+.color-section {
+    color:white;
+}

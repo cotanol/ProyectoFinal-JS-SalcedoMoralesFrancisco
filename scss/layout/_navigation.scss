@@ -1,0 +1,15 @@
+.navigation {
+    background-color: #2C3E50;
+
+    .navbar {
+        background-color: inherit;
+
+        .navbar-nav .nav-link {
+            color: #FFF;
+
+            &:hover {
+                color: #DDD;
+            }
+        }
+    }
+}

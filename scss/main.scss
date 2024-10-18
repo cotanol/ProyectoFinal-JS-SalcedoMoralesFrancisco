@@ -1,0 +1,13 @@
+// Import base styles
+@import 'base/base';
+
+// Import utilities
+@import 'utilities/helpers';
+
+
+// Import layout styles
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/footer';
+
+// Aquí puedes importar estilos específicos de componentes si los tienes

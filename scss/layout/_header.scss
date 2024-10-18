@@ -1,0 +1,21 @@
+.header {
+    background-color: #2C3E50;
+    color: #FFF;
+    padding: 2rem 0;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+        font-size: 2.4rem;
+    }
+}
+
+/** Hero **/
+
+.hero {
+    background-image: url(../img/hero.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+    height: 55rem;
+}

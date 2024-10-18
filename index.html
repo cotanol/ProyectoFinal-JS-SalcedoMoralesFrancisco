@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Store - Inicio</title>
+    <meta name="description" content="Visitanos y mira nuestros precios">
+    <meta name="keywords" content="Computadoras, Gamer, Ofertas, Gama, ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="container-fluid bg-dark text-white py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <a href="./index.html">
+                        <h1 class="text-center text-md-start">Hardware Store</h1>
+                    </a>
+                </div>
+                <!-- Inicio Menu Navegacion -->
+                <div class="col-md-6">
+                    <nav class="navbar navbar-expand-md navbar-dark">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./pages/productos.html">Productos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">About Us</a></li>
+                                <!-- Boton del carrito -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" id="cart">
+                                        <i class="fas fa-shopping-cart"></i><span id="cart-count">(0)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <!-- Fin Menu Navegacion -->
+            </div>
+        </div>
+    </header>
+
+    <section class="hero"></section>
+
+    <main class="container my-5">
+        <!-- Inicio Seccion Productos -->
+        <section class="text-center mb-5">
+            <h2>Nuestros Productos</h2>
+            
+            <div id="contenedorProductos" class="row">
+                <!-- Los productos se cargarán aquí dinámicamente -->
+            </div>
+            
+        <!-- Fin Seccion Productos -->
+
+    </main>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Hardware Store. Todos los derechos Reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Contenedor del carrito -->
+    <div class="cart" id="cartContainer" style="right: -500px;">
+        <div class="carrito-conteiner">
+            <span id="cerrarCarrito" class="fa-solid fa-xmark borrar"></span>
+            <div class="titulo-carrito">
+                <h1> Tu Carrito</h1>
+            </div>
+            <div>
+                <h3 id="carritoVacio">Tu carrito está vacío ☹️</h3>
+            </div>
+            <div class="productos-carrito-conteiner">
+                <!-- Aquí se renderizan los productos con JS -->
+            </div>
+            <div id="accionesCarrito" class="pagar-carrito">
+                <div>
+                    <h3>Tu total:</h3>
+                    <p id="totalCarrito"></p>
+                </div>
+                <button id="pagarCarrito" class="button-cart">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Fin del contenedor del carrito -->
+
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
