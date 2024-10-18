@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Resto de tus funciones (agregarAlCarrito, actualizarNumeroCarrito, mostrarProductosEnCarrito, eliminarProductoDelCarrito, etc.)
+    // Resto de las funciones
 
     function agregarAlCarrito(id, nombre, precio, img) {
         const productoExistente = productosEnCarrito.find(producto => producto.id === id);
